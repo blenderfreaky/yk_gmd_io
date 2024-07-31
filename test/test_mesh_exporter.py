@@ -2,7 +2,7 @@ from typing import List, Tuple, Iterable, Dict
 
 import pytest
 
-from yk_gmd_blender.meshlib.export_submeshing import MeshLoopIdx, dedupe_loops, convert_meshloop_tris_to_tsubmeshes, \
+from ..yk_gmd_blender.meshlib.export_submeshing import MeshLoopIdx, dedupe_loops, convert_meshloop_tris_to_tsubmeshes, \
     DedupedVertIdx, MeshLoopTri, SubmeshTri
 
 

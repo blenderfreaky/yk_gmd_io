@@ -1,6 +1,6 @@
 import pytest
 
-from yk_gmd_blender.structurelib.primitives import c_uint8, c_uint16, c_uint32, c_uint64, c_int8, c_int32, c_int64, \
+from ..yk_gmd_blender.structurelib.primitives import c_uint8, c_uint16, c_uint32, c_uint64, c_int8, c_int32, c_int64, \
     c_int16, c_unorm8, c_u8_Minus1_1
 
 
