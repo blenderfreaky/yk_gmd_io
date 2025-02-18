@@ -7,19 +7,19 @@ from pathlib import Path
 from typing import List, Callable, TypeVar, Tuple, cast, Iterable, Set, DefaultDict, Optional, Dict, Generic, Sequence
 
 from mathutils import Vector
-from ..yk_gmd_blender.gmdlib.abstract.gmd_mesh import GMDMesh, GMDSkinnedMesh
-from ..yk_gmd_blender.gmdlib.abstract.gmd_shader import GMDVertexBuffer, GMDSkinnedVertexBuffer
-from ..yk_gmd_blender.gmdlib.abstract.nodes.gmd_bone import GMDBone
-from ..yk_gmd_blender.gmdlib.abstract.nodes.gmd_node import GMDNode
-from ..yk_gmd_blender.gmdlib.abstract.nodes.gmd_object import GMDSkinnedObject, GMDUnskinnedObject, GMDBoundingBox
-from ..yk_gmd_blender.gmdlib.converters.common.to_abstract import FileImportMode, VertexImportMode
-from ..yk_gmd_blender.gmdlib.errors.error_classes import GMDImportExportError
-from ..yk_gmd_blender.gmdlib.errors.error_reporter import LenientErrorReporter, ErrorReporter
-from ..yk_gmd_blender.gmdlib.io import read_gmd_structures, read_abstract_scene_from_filedata_object
-from ..yk_gmd_blender.gmdlib.structure.common.node import NodeType
-from ..yk_gmd_blender.gmdlib.structure.endianness import check_are_vertices_big_endian, check_is_file_big_endian
-from ..yk_gmd_blender.gmdlib.structure.version import GMDVersion
-from ..yk_gmd_blender.meshlib.vertex_fusion import vertex_fusion, make_bone_indices_consistent
+from yk_gmd_blender.gmdlib.abstract.gmd_mesh import GMDMesh, GMDSkinnedMesh
+from yk_gmd_blender.gmdlib.abstract.gmd_shader import GMDVertexBuffer, GMDSkinnedVertexBuffer
+from yk_gmd_blender.gmdlib.abstract.nodes.gmd_bone import GMDBone
+from yk_gmd_blender.gmdlib.abstract.nodes.gmd_node import GMDNode
+from yk_gmd_blender.gmdlib.abstract.nodes.gmd_object import GMDSkinnedObject, GMDUnskinnedObject, GMDBoundingBox
+from yk_gmd_blender.gmdlib.converters.common.to_abstract import FileImportMode, VertexImportMode
+from yk_gmd_blender.gmdlib.errors.error_classes import GMDImportExportError
+from yk_gmd_blender.gmdlib.errors.error_reporter import LenientErrorReporter, ErrorReporter
+from yk_gmd_blender.gmdlib.io import read_gmd_structures, read_abstract_scene_from_filedata_object
+from yk_gmd_blender.gmdlib.structure.common.node import NodeType
+from yk_gmd_blender.gmdlib.structure.endianness import check_are_vertices_big_endian, check_is_file_big_endian
+from yk_gmd_blender.gmdlib.structure.version import GMDVersion
+from yk_gmd_blender.meshlib.vertex_fusion import vertex_fusion, make_bone_indices_consistent
 
 T = TypeVar('T')
 
